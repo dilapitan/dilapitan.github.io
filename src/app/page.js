@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Home() {
   return (
     <main className="min-h-screen px-3 py-12">
@@ -22,8 +24,30 @@ export default function Home() {
         <br />
         <br />
 
-        <div className="grid grid-cols-1 sm:grid-cols-4 gap-12">
-          <div></div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-12">
+          <div>
+            <h4>Check out some of my works:</h4>
+            <Link href="/portfolio">
+              <div className="flex justify-center items-center pt-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-6 h-6 text-blue-600"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+                  />
+                </svg>
+                &nbsp;&nbsp;
+                <span className="underline">Portfolio</span>
+              </div>
+            </Link>
+          </div>
 
           <div>
             <h4 className="text-base font-semibold">My Current Stack:</h4>
@@ -126,35 +150,27 @@ export default function Home() {
               &nbsp;&nbsp;
               <p>domlapitan@gmail.com</p>
             </div>
-
-            <div className="flex justify-center items-center pt-5">
-              <svg
-                className="h-4 w-4 text-blue-600"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                {' '}
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />{' '}
-                <rect x="2" y="9" width="4" height="12" />{' '}
-                <circle cx="4" cy="4" r="2" />
-              </svg>
-              &nbsp;&nbsp;
-              <p className="underline">
-                <a
-                  href="https://www.linkedin.com/in/dilapitan/"
-                  target="_blank"
+            <a href="https://www.linkedin.com/in/dilapitan/" target="_blank">
+              <div className="flex justify-center items-center pt-5">
+                <svg
+                  className="h-4 w-4 text-blue-600"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
-                  Dominic Lapitan
-                </a>
-              </p>
-            </div>
+                  {' '}
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />{' '}
+                  <rect x="2" y="9" width="4" height="12" />{' '}
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+                &nbsp;&nbsp;
+                <p className="underline">Dominic Lapitan</p>
+              </div>
+            </a>
           </div>
-
-          <div></div>
         </div>
       </div>
     </main>
