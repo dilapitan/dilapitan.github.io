@@ -29,7 +29,7 @@ function Portfolio() {
     {
       url: 'https://dilapitan.github.io/daily-reading-counter/',
       description:
-        'A simple website for easily calculating the pages to be read per session given the starting page. Built this for for 2022 and helped me read 29 books for that year.',
+        'A simple website for easily calculating the pages to be read per session given the starting page. Built this back in 2022 and helped me read 29 books for that year.',
       technologies: 'Vue, Vuetify',
     },
   ]
